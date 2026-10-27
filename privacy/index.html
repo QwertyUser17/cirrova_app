@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cirrova privacy policy</title>
+<style>
+:root { --bg: #f6f8fb; --text: #1b1f24; --muted: #5a6470; --line: #d9dee5; --link: #0071d1; }
+@media (prefers-color-scheme: dark) { :root { --bg: #121417; --text: #e6e9ed; --muted: #9aa4b1; --line: #2c323a; --link: #6da6e4; } }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 20px; margin: 32px 0 8px; }
+a { color: var(--link); }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; }
+code { font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Cirrova privacy policy</h1>
+<p>Effective date: 27 October 2026</p>
+<p>Cirrova is a weather app. It has no account, no advertising, no analytics and no crash reporting service. This policy describes everything the app sends off your phone and why.</p>
+<h2>What leaves your phone</h2>
+<p><strong>Coordinates of your places, rounded to about 1 km.</strong> To get a forecast, air quality, warnings and river levels, the app sends the rounded latitude and longitude of each place directly to the weather service that answers for it:</p>
+<table><thead><tr><th>Service</th><th>What for</th></tr></thead><tbody><tr><td>Open-Meteo (open-meteo.com)</td><td>forecast, air quality and pollen, climate normals, city search</td></tr><tr><td>MET Norway (api.met.no)</td><td>forecast for the Nordic countries, only while the app is open</td></tr><tr><td>MeteoAlarm (meteoalarm.org)</td><td>official warnings in Europe</td></tr><tr><td>IMGW-PIB (imgw.pl)</td><td>official warnings and river levels in Poland</td></tr><tr><td>National Weather Service (weather.gov)</td><td>official warnings in the USA</td></tr><tr><td>Environment and Climate Change Canada (weather.gc.ca)</td><td>official warnings and radar in Canada and the USA</td></tr><tr><td>NOAA Aviation Weather Center (aviationweather.gov)</td><td>readings of weather stations within about 25 km, to correct the first hours of the forecast</td></tr><tr><td>NOAA Space Weather Prediction Center</td><td>the northern lights (Kp) index; no location is sent</td></tr></tbody></table>
+<p>With "Detect location" on, the rounded position of your own place also goes to the location service built into Android (on most phones Google's) to get the name of the town.</p>
+<p>City search sends the name you type. The radar and map screens load map, radar and satellite pictures for the area on screen from OpenStreetMap, ECCC, NASA GIBS and the Cirrova radar service; like any web request, these show the area you look at and your IP address to that server. The Cirrova radar server itself keeps no log of requests; the network that delivers its pictures may keep its usual short-lived traffic logs.</p>
+<p>The app also asks the Cirrova radar service which data sources are switched off, and, on the screen about background work, asks dontkillmyapp.com for its advice for your phone's maker; the maker's name is all that request carries.</p>
+<p>Each service handles requests under its own privacy policy. Cirrova does not send them anything else: no name, no identifier of you or your device.</p>
+<p><strong>Fonts.</strong> If you pick a font that is not built into the app, Android downloads it from Google Fonts through Google Play services.</p>
+<h2>What stays on your phone</h2>
+<ul><li>Your places, settings and widget settings.</li><li>Your approximate location, if you turn on "Detect location". It is read only while the app is open or the weather is being refreshed, and only its rounded coordinates are sent, as above.</li><li>Calendar: if you turn on "Next calendar event" in a widget, the widget reads the title and time of your next event from the phone's calendar to show it. Calendar data is never sent anywhere.</li><li>Photos you choose as backgrounds are copied into the app's own storage and never leave the phone; they are not part of the backup file.</li><li>The backup file you save is written where you choose and is not uploaded by the app.</li></ul>
+<h2>Messages to the developer</h2>
+<p>"Report a problem" and "Report a translation error" open your email app with a message you write and send yourself. It includes the app version, the Android version, the device model and the app language, nothing else.</p>
+<h2>Rating request</h2>
+<p>Once, after you have used the app on several days, Google Play may show its own rating window. Cirrova does not see whether or how you rated it.</p>
+<h2>Children</h2>
+<p>Cirrova is not directed at children and collects no personal data from anyone.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the new version is published at this address with a new date.</p>
+<h2>Contact</h2>
+<p>Cirrova, <a href="mailto:cirrovaapp@gmail.com">cirrovaapp@gmail.com</a></p>
+</main>
+</body>
+</html>
