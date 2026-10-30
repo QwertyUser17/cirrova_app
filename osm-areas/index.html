@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cirrova warning areas</title>
+<style>
+:root { --bg: #f6f8fb; --text: #1b1f24; --muted: #5a6470; --link: #0071d1; }
+@media (prefers-color-scheme: dark) { :root { --bg: #121417; --text: #e6e9ed; --muted: #9aa4b1; --link: #6da6e4; } }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+p { color: var(--muted); }
+a { color: var(--link); }
+code { font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Warning areas from OpenStreetMap</h1>
+<p>The Cirrova app carries these outlines of administrative areas so that the phone itself can tell
+which official weather warnings cover a place. They are derived from OpenStreetMap data,
+© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>, and are made
+available under the <a href="https://opendatacommons.org/licenses/odbl/1-0/">Open Database License 1.0</a> (ODbL).</p>
+
+<p>Made from Geofabrik's OpenStreetMap extracts downloaded on 30 October 2026: the boundary relations
+tagged <code>boundary=administrative</code>, exported with osmium and simplified to about 500 m
+(0.005°). Each area keeps the codes a warning can name it by: NUTS codes and every shorter prefix of
+them (older NUTS codes from Wikidata, CC0), Polish TERYT county codes and MeteoAlarm's EMMA_ID codes
+that equal them, and DWD warn cells for German districts.</p>
+
+<p>Each file is a JSON array of areas: <code>k</code> holds the keys as <code>KIND:code</code>,
+<code>r</code> the rings, outer rings and holes alike, each a flat list of longitude, latitude pairs.
+These are the files shipped with Cirrova 1.1.0.</p>
+
+<ul>
+<li><a href="BE.json">BE.json</a> — Belgium, 42 areas</li>
+<li><a href="BG.json">BG.json</a> — Bulgaria, 28 areas</li>
+<li><a href="DE.json">DE.json</a> — Germany, 401 areas</li>
+<li><a href="FR.json">FR.json</a> — France, 96 areas</li>
+<li><a href="HR.json">HR.json</a> — Croatia, 21 areas</li>
+<li><a href="HU.json">HU.json</a> — Hungary, 20 areas</li>
+<li><a href="PL.json">PL.json</a> — Poland, 380 areas</li>
+<li><a href="RO.json">RO.json</a> — Romania, 42 areas</li>
+</ul>
+
+<p>Questions: <a href="mailto:cirrovaapp@gmail.com">cirrovaapp@gmail.com</a></p>
+</main>
+</body>
+</html>
