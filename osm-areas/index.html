@@ -31,7 +31,9 @@ that equal them, and DWD warn cells for German districts.</p>
 
 <p>Each file is a JSON array of areas: <code>k</code> holds the keys as <code>KIND:code</code>,
 <code>r</code> the rings, outer rings and holes alike, each a flat list of longitude, latitude pairs.
-These are the files shipped with Cirrova 1.1.0.</p>
+These are the files shipped with Cirrova 1.1.0. Versions after 1.2.0 carry the same areas in a smaller
+form: <code>d</code> in place of <code>r</code>, each ring in ten-thousandths of a degree, its first point whole
+and each next one as the step from the point before; the values are the same.</p>
 
 <ul>
 <li><a href="BE.json">BE.json</a> — Belgium, 42 areas</li>
