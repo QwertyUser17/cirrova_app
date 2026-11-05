@@ -46,6 +46,33 @@ and each next one as the step from the point before; the values are the same.</p
 <li><a href="RO.json">RO.json</a> — Romania, 42 areas</li>
 </ul>
 
+<h2>Areas the Cirrova radar service adds to warnings</h2>
+<p>Some weather services name a warning's areas without their outlines. The Cirrova radar service then
+gives such an area the outline of the administrative area of the same name, from these files, before the app
+downloads the country's warnings. Made on 5 November 2026 from the same kind of extracts (Geofabrik,
+<code>boundary=administrative</code>, osmium, simplified to about 500 m), keeping each area's outer rings only.</p>
+
+<p>Each file is a JSON object: <code>levels</code> lists the OpenStreetMap admin levels it holds, and
+<code>units</code> the areas, each with its level <code>l</code>, its names <code>n</code> (lower case,
+without accents or punctuation, from every name tag, and the name followed by its region's for areas of the
+same name) and its outer rings <code>r</code>, each a flat list of longitude, latitude pairs. The last unit,
+level 2, is the country itself.</p>
+
+<ul>
+<li><a href="warnings/AT.json">warnings/AT.json</a> — Austria, 182 areas</li>
+<li><a href="warnings/CY.json">warnings/CY.json</a> — Cyprus, 51 areas</li>
+<li><a href="warnings/CZ.json">warnings/CZ.json</a> — Czechia, 242 areas</li>
+<li><a href="warnings/FI.json">warnings/FI.json</a> — Finland, 332 areas</li>
+<li><a href="warnings/IE.json">warnings/IE.json</a> — Ireland, 27 areas</li>
+<li><a href="warnings/IT.json">warnings/IT.json</a> — Italy, 148 areas</li>
+<li><a href="warnings/LT.json">warnings/LT.json</a> — Lithuania, 71 areas</li>
+<li><a href="warnings/MD.json">warnings/MD.json</a> — Moldova, 38 areas</li>
+<li><a href="warnings/MT.json">warnings/MT.json</a> — Malta, 1 areas</li>
+<li><a href="warnings/NL.json">warnings/NL.json</a> — Netherlands, 355 areas</li>
+<li><a href="warnings/PT.json">warnings/PT.json</a> — Portugal, 327 areas</li>
+<li><a href="warnings/SK.json">warnings/SK.json</a> — Slovakia, 88 areas</li>
+</ul>
+
 <p>Questions: <a href="mailto:cirrovaapp@gmail.com">cirrovaapp@gmail.com</a></p>
 </main>
 </body>
